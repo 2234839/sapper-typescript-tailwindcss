@@ -1,0 +1,21 @@
+{
+	"extends": "@tsconfig/svelte/tsconfig.json",
+	"compilerOptions": {
+		"lib": [
+			"DOM",
+			"ES2017",
+			"WebWorker"
+		],
+		// "module": "UMD", /* Specify moduleC code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+		"target": "ES2017"
+	},
+	"include": [
+		"src/**/*",
+		"src/node_modules/**/*"
+	],
+	"exclude": [
+		"node_modules/*",
+		"__sapper__/*",
+		"static/*"
+	]
+}
